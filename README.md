@@ -2,7 +2,7 @@
 
 How to:
 ---
-* Clone the repo  
+* Clone the repo 
 * run `go mod init somename`
 * run `go mod tidy`
 * Edit `solution.go` 
