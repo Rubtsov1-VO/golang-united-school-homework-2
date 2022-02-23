@@ -22,10 +22,13 @@ type sides int
 
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	result := 0.0
+
 	if sidesNum == 4 {
 		result = sideLen * sideLen
 	} else if sidesNum == 3 {
-		result = (3 / 4) * sideLen * sideLen
+		coat := math.Sqrt(3)
+
+		result = (coat / 4) * sideLen * sideLen
 	} else if sidesNum == 0 {
 		result = math.Pi * sideLen
 	} else {
