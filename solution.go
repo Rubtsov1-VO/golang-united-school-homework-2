@@ -2,7 +2,7 @@ package square
 
 import (
 	"fmt"
-	geometry "golang-united-school-homework-2"
+	"math"
 )
 
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
@@ -21,7 +21,21 @@ const (
 type sides int
 
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
-	if sidesNum == 3 {
-
+	if sidesNum == 4 {
+		fmt.Println(sideLen * sideLen)
+	} else if sidesNum == 3 {
+		fmt.Println((3 / 4) * sideLen * sideLen)
+	} else if sidesNum == 0 {
+		fmt.Println(math.Pi * sideLen)
+	} else {
+		fmt.Println("it wasn't our figure")
 	}
+	return 1.0
+}
+
+func main() {
+	CalcSquare(10.0, SidesCircle)
+	CalcSquare(10.0, SidesSquare)
+	CalcSquare(10.0, SidesTriangle)
+
 }
