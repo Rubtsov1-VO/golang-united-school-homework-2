@@ -1,6 +1,6 @@
 package main
 
-import "golang-united-school-homework-2/square"
+import "Rubtsov1-VO/golang-united-school-homework-2/square"
 
 func main() {
 	CalcSquare(10.0, SidesCircle)
