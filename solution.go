@@ -21,6 +21,7 @@ const (
 type sides int
 
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
+	result := 0.0
 	if sidesNum == 4 {
 		result = sideLen * sideLen
 	} else if sidesNum == 3 {
