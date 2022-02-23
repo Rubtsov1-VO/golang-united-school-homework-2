@@ -22,13 +22,13 @@ type sides int
 
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	if sidesNum == 4 {
-		fmt.Println(sideLen * sideLen)
+		result = sideLen * sideLen
 	} else if sidesNum == 3 {
-		fmt.Println((3 / 4) * sideLen * sideLen)
+		result = (3 / 4) * sideLen * sideLen
 	} else if sidesNum == 0 {
-		fmt.Println(math.Pi * sideLen)
+		result = math.Pi * sideLen
 	} else {
 		fmt.Println("it wasn't our figure")
 	}
-	return 1.0
+	return result
 }
