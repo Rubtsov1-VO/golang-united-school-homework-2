@@ -30,7 +30,7 @@ func CalcSquare(sideLen float64, sidesNum sides) float64 {
 
 		result = (coat / 4) * sideLen * sideLen
 	} else if sidesNum == 0 {
-		result = math.Pi * sideLen
+		result = math.Pi * sideLen * sideLen
 	} else {
 		fmt.Println("it wasn't our figure")
 	}
