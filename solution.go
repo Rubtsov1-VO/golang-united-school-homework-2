@@ -1,4 +1,4 @@
-package square
+package main
 
 import (
 	"fmt"
@@ -32,5 +32,3 @@ func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	}
 	return 1.0
 }
-
-
